@@ -2,8 +2,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
   xmlns:gap   = "http://phonegap.com/ns/1.0"
   id          = "com.michael.alphabetizer"
-  version     = "1.0.1"
-  versionCode = "4">
+  version     = "1.0.2"
+  versionCode = "6">
   <name>
     Alphabetizer
   </name>
@@ -15,6 +15,12 @@
   </author>
 
   <content src="index.html" />
+  <access origin="*" />
+  <preference name="permissions" value="none"/>
+  <preference name="phonegap-version" value="cli-5.2.0" />
+  <preference name="LogLevel" value="VERBOSE"/>
+  <preference name="debuggable" value="true"/>
+  <gap:plugin name="cordova-admob" source="npm" />
 
   <icon src="icon.png" gap:role="default" />
   <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
@@ -31,7 +37,4 @@
   <icon gap:platform="webos" src="res/icon/webos/icon-64.png" />
   <icon gap:platform="winphone" src="res/icon/windows-phone/icon-48.png" />
   <icon gap:platform="winphone" gap:role="background" src="res/icon/windows-phone/icon-173-tile.png" />
-
-  <preference name="permissions" value="none"/>
-  <preference name="phonegap-version" value="cli-5.2.0" />
 </widget>

@@ -11,3 +11,9 @@ textarea {
   height: 200px;
   resize: vertical;
 }
+
+.progressDialog, .button {
+  position: absolute;
+  top : -1000px;
+  left: -1000px;
+}
